@@ -1,0 +1,173 @@
+/* this is for chat.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  margin-top: 5px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 25px;
+  color: coral;
+  display: block;
+  font-size: 15px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* extended main content */
+pre {
+  display: inline;
+  padding: 0;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+#chatHere {
+  width: 80%;
+  height: 400px;
+  text-align: left;
+  overflow: overlay;
+  margin: 0 auto;
+  font-size: initial;
+}
+#chatHere h5 {
+  padding: 1px;
+  margin: 5px;
+}
+#chatHere h5 span {
+  font-weight: lighter;
+}
+
+form#messageForm {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+form .textInput {
+  width: 100%;
+}
+div.main-container {
+  text-align: center;
+}
+div.container {
+  position: static;
+  text-align: center;
+  margin: 10px 5px;
+  background-color: #ffffff;
+  width: 90%;
+  display: inline-block;
+}
+
+h1.title {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.message-left {
+  position: relative;
+  width: 65%;
+  margin: 0 auto;
+  padding: 0;
+}
+.message-right {
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border-radius: 5x;
+  color: #ffffff;
+  background-color: lightslategrey;
+  position: static;
+  padding: 0;
+  margin: 10px 10px;
+}
+.btn:hover {
+  background-color: black;
+}
+.btn:disabled {
+  background-color: gray;
+}
+
+/* this is for index.html css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkred;
+}
+form.form-chat {
+  display: inline-block;
+  margin: 10px;
+}
+.index-container {
+  padding: 10px;
+  text-align: center;
+  margin: 10% auto;
+  width: 30%;
+  height: 300px;
+  background-color: #ffffff;
+}
+.input-name {
+  margin-top: 10px;
+  text-align: left;
+}
+.label-index {
+  font-size: 15px;
+}
+.roomNumber,
+.name {
+  text-align: center;
+  width: 80%;
+  margin: 15px;
+  height: 20px;
+}
+
+.insertedContent {
+  color: #f1f1f1;
+  text-align: center;
+  margin: 5px;
+}
+.insertedContent h2 {
+  margin: 10px;
+  color: coral;
+  font-family: 'Times New Roman', Times, serif;
+}

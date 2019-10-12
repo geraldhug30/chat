@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ChatApp</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidenav" id="sidenav">
+      <!-- <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a> -->
+    </div>
+
+    <div class="main">
+      <div class="main-container">
+        <div class="container">
+          <h1 class="title">Chat App</h1>
+          <div id="chatHere"></div>
+          <form id="messageForm">
+            <div class="message-left">
+              <input
+                name="message"
+                class="textInput"
+                type="text"
+                id="textInput"
+                placeholder="Message:"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="message-right">
+              <button class="btn" id="plusOne">send</button>
+            </div>
+          </form>
+          <button class="btn" id="send-location">Get Location</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/parse.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>

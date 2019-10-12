@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body-index">
+    <div class="index-container">
+      <h1>Join</h1>
+      <form class="form-chat" action="/chat.html" action="post">
+        <div class="input-name">
+          <label for="name" class="label-index">Display Name:</label>
+          <input
+            type="text"
+            name="name"
+            class="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+
+        <div class="input-name">
+          <label for="roomNumber" class="label-index">Room:</label>
+          <input
+            type="text"
+            name="roomNumber"
+            class="roomNumber"
+            id="roomNumber"
+            placeholder="Room"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
